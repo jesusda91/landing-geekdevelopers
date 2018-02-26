@@ -1,8 +1,8 @@
 	<img src="assets/imgs/geekdev.svg" alt="">
 	<div class="items-navbar flexbox align-vertical">
-		<a href="#about"><p>About</p></a>
-		<a href="#projects"><p>Projects</p></a>
-		<a href="#team"><p>Team</p></a>
-		<a href="#contact"><p>Contact</p></a>
+		<a href="#about" {{action "scrollTo" "#about" bubbles=false}}><p>About</p></a>
+		<a href="#projects" {{action "scrollTo" "#projects" bubbles=false}}><p>Projects</p></a>
+		<a href="#team" {{action "scrollTo" "#team" bubbles=false}}><p>Team</p></a>
+		<a href="#contact" {{action "scrollTo" "#contact" bubbles=false}}><p>Contact</p></a>
 	</div>
 {{yield}}
