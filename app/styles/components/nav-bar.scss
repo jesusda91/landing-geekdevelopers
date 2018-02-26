@@ -7,6 +7,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 10;
 	img {
 		height: 28px;
 		margin: 12px;
@@ -27,5 +28,43 @@
 	a {
 		color: white;
 		text-decoration: none;
+	}
+}
+
+.animated.navbar {
+	-webkit-animation-duration: 0.7s;
+	animation-duration: 0.7s;
+}
+
+.navbar {
+	transition: background-color 1s !important;
+}
+
+.navbar:not(.headroom--top) {
+	background-color: rgba(21,21,21,0.995);
+}
+
+@media screen and (max-width: 927px) {
+	.navbar {
+		padding-top: 24px;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 591px) {
+	.items-navbar p {
+		padding: 1em 0.5em;
+	}
+}
+
+
+@media screen and (max-width: 461px) {
+	.items-navbar p {
+		padding: 1em 0.35em;
+		font-size: 18px;
 	}
 }

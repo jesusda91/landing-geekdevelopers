@@ -18,7 +18,7 @@ body {
 .section1 {
 	color: white;
 	text-align: center;
-	padding: 190px 12px;
+	padding: 270px 12px 190px;
 	p {
 		color: white;
 		text-align: center;
@@ -225,17 +225,6 @@ body {
 	}
 }
 
-@media screen and (max-width: 927px) {
-	.navbar {
-		padding-top: 24px;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		-webkit-justify-content: center;
-		-moz-justify-content: center;
-		justify-content: center;
-	}
-}
-
 @media screen and (max-width: 925px) {
 	.about {
 		text-align: center;
@@ -269,20 +258,10 @@ body {
 	.items-navbar p {
 		padding: 1em 0.5em;
 	}
-	.section3 img {
-		width: 80%;
-	}
-	.section3 .blackgold {
-		width: auto;
-		height: 170px;
-	}
 }
 
 
 @media screen and (max-width: 461px) {
-	.square-frame .square {
-		width: 100%;
-	}
 	.items-navbar p {
 		padding: 1em 0.35em;
 		font-size: 18px;
