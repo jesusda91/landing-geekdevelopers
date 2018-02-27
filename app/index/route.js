@@ -91,6 +91,7 @@ export default Route.extend({
 				charge: "ILLUSTRATOR DESIGN",
 				image: "assets/imgs/team/sebastian_xs.jpg",
 				linkedin: "https://www.linkedin.com/in/esemarino/",
+				artstation: "https://www.artstation.com/esemarino",
 			}, {
 				name: "PEDRO CARDONA",
 				charge: "COMMUNITY MANAGER",

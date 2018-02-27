@@ -42,3 +42,8 @@ $icomoon-font-path: "fonts/GeekIcons" !default;
 		content: unicode($ic_linkedin);
 	}
 }
+.ic_artstation {
+	&:before {
+		content: unicode($ic_artstation);
+	}
+}
