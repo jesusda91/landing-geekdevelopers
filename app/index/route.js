@@ -154,25 +154,45 @@ export default Route.extend({
 					origin:'right',
 					distance: '70px',
 					duration: 800,
-					delay: 70
+					delay: 70,
+					beforeReveal: function (domEl) {
+						setTimeout(function() {
+							domEl.style.opacity = "1";
+						}, 2);
+					},
 				});
 				scrollReveal.reveal('.point.bg-green',{
 					origin:'right',
 					distance: '80px',
 					duration: 800,
-					delay: 150
+					delay: 150,
+					beforeReveal: function (domEl) {
+						setTimeout(function() {
+							domEl.style.opacity = "1";
+						}, 2);
+					},
 				});
 				scrollReveal.reveal('.point.bg-red',{
 					origin:'right',
 					distance: '90px',
 					duration: 800,
-					delay: 250
+					delay: 250,
+					beforeReveal: function (domEl) {
+						setTimeout(function() {
+							domEl.style.opacity = "1";
+						}, 2);
+					},
 				});
 				scrollReveal.reveal('.point.bg-blue',{
 					origin:'right',
 					distance: '100px',
 					duration: 800,
-					delay: 350
+					delay: 350,
+					beforeReveal: function (domEl) {
+						setTimeout(function() {
+							domEl.style.opacity = "1";
+						}, 2);
+					},
 				});
 
 				scrollReveal.reveal('.contact-text.text1',{
