@@ -31,181 +31,27 @@
 	</div>
 </div>
 <div class="section2-5 flexbox justify-center align-vertical flex-wrap" id="team">
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/juandavid_xs.jpg" alt="">
+	{{#each model as |member|}}
+		<div class="circle-ctn flexbox flex-column justify-center align-vertical">
+			<div class="circle">
+				<img src={{member.image}} alt="">
+			</div>
+			<p class="name">{{member.name}}</p>
+			<p class="charge">{{member.charge}}</p>
+			<div class="social flexbox justify-center align-vertical">
+				{{#if member.linkedin}}
+					<a href={{member.linkedin}} target="_blank">
+						<i class="ic_linkedin"></i>
+					</a>
+				{{/if}}
+				{{#if member.github}}
+					<a href={{member.github}} target="_blank">
+						<i class="ic_github"></i>
+					</a>
+				{{/if}}
+			</div>
 		</div>
-		<p class="name">JUAN DAVID AGUDELO</p>
-		<p class="charge">CEO & COFOUNDER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/cristian_xs.jpg" alt="">
-		</div>
-		<p class="name">CRISTIAN MARIN</p>
-		<p class="charge">CEO & COFOUNDER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/james_xs.jpg" alt="">
-		</div>
-		<p class="name">JAMES CARDONA</p>
-		<p class="charge">MANAGER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/cristiancamilo_xs.jpg" alt="">
-		</div>
-		<p class="name">CRISTIAN CAMILO</p>
-		<p class="charge">PROJECT MANAGER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/juanquintero_xs.jpg" alt="">
-		</div>
-		<p class="name">JUAN QUINTERO</p>
-		<p class="charge">ANDROID LEADER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/federico_xs.jpg" alt="">
-		</div>
-		<p class="name">FEDERICO VELASQUEZ</p>
-		<p class="charge">DESIGN LEADER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/robinson_xs.jpg" alt="">
-		</div>
-		<p class="name">ROBINSON RUEDA</p>
-		<p class="charge">FRONTEND LEADER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/jinme_xs.jpg" alt="">
-		</div>
-		<p class="name">JINME MIRABAL</p>
-		<p class="charge">BACKEND LEADER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/camilo_xs.jpg" alt="">
-		</div>
-		<p class="name">CAMILO RESTREPO</p>
-		<p class="charge">MARKETING LEADER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/jesus_xs.jpg" alt="" class="jesus">
-		</div>
-		<p class="name">JESUS MARTINEZ</p>
-		<p class="charge">FRONTEND DEVELOPER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/jeff_xs.jpg" alt="">
-		</div>
-		<p class="name">JEFFERSON ORTIZ</p>
-		<p class="charge">FRONTEND DEVELOPER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/atehortua_xs.jpg" alt="">
-		</div>
-		<p class="name">CRISTIAN ATEHORTUA</p>
-		<p class="charge">FRONTEND DEVELOPER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/santiago_xs.jpg" alt="">
-		</div>
-		<p class="name">SANTIAGO SANCHEZ</p>
-		<p class="charge">DEVOPS</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/david_xs.jpg" alt="">
-		</div>
-		<p class="name">DAVID LONDOÑO</p>
-		<p class="charge">BACKEND DEVELOPER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/leon_xs.jpg" alt="">
-		</div>
-		<p class="name">LEON PEÑA</p>
-		<p class="charge">BACKEND DEVELOPER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/sergio_xs.jpg" alt="">
-		</div>
-		<p class="name">SERGIO CRUZ</p>
-		<p class="charge">BACKEND DEVELOPER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/mateo_xs.jpg" alt="">
-		</div>
-		<p class="name">MATEO CALLEJAS</p>
-		<p class="charge">UX PROTOTYPER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/sebastian_xs.jpg" alt="">
-		</div>
-		<p class="name">SEBASTIAN MARIN</p>
-		<p class="charge">ILLUSTRATOR DESIGN</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/pepe_xs.jpg" alt="">
-		</div>
-		<p class="name">PEDRO CARDONA</p>
-		<p class="charge">COMMUNITY MANAGER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/camilor_xs.jpg" alt="">
-		</div>
-		<p class="name">CAMILO RAMIREZ</p>
-		<p class="charge">CUSTOMER SERVICE</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/rayan_xs.jpg" alt="">
-		</div>
-		<p class="name">RYAN FAUSCIANA</p>
-		<p class="charge">CUSTOMER SERVICE</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/melissa_xs.jpg" alt="">
-		</div>
-		<p class="name">MELISSA MUÑOZ</p>
-		<p class="charge">IOT DEVELOPER</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/juanbernardo_xs.jpg" alt="">
-		</div>
-		<p class="name">JUAN ORTIZ</p>
-		<p class="charge">MEDIALOP CEO</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/juanes_xs.jpg" alt="">
-		</div>
-		<p class="name">JUAN CALLEJAS</p>
-		<p class="charge">CONTENT CURATOR</p>
-	</div>
-	<div class="circle-ctn flexbox flex-column justify-center align-vertical">
-		<div class="circle">
-			<img src="assets/imgs/team/mauricio_xs.jpg" alt="">
-		</div>
-		<p class="name">MAURICIO HENAO</p>
-		<p class="charge">CRYPTO TRADER</p>
-	</div>
+	{{/each}}
 </div>
 <div class="section3 flex-wrap flexbox align-vertical justify-center" name="projects" id="projects">
 	<a href="http://medialop.com/" target="_blank"><img src="assets/imgs/medialop.svg"></a>

@@ -23,7 +23,7 @@ export default Component.extend({
 		scheduleOnce('afterRender',this,function () {
 			let isFastBoot = this.get('fastboot.isFastBoot');
 			if (!isFastBoot) {
-				$(".navbar").headroom({
+				this.$().headroom({
 					'tolerance': {
 						'down' : 5,
 						'up' : 10

@@ -160,8 +160,8 @@ body {
 
 .circle-ctn {
 	margin: 20px;
-	p {
-		margin: 7px 0;
+	p, .social {
+		margin: 7px 0 3px;
 	}
 	.name {
 		font-family: robotobold;
@@ -169,6 +169,17 @@ body {
 	}
 	.charge {
 		color: #ff006b;
+		font-family: robotoregular;
+	}
+	.social {
+		a {
+			text-decoration: none;
+			i {
+				font-size: 20px;
+				color: #dadada;
+				margin: 6px;
+			}
+		}
 	}
 }
 
