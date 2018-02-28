@@ -1,0 +1,36 @@
+.footer {
+	@include align-vertical();
+	@include justify-content(space-around);
+	@include flex-wrap(wrap);
+	padding: 24px;
+	.logo-footer {
+
+	}
+	.list-items {
+		@include align-vertical();
+		@include flex-wrap(wrap);
+		margin: 14px;
+		a {
+			text-decoration: none;
+		}
+		a, p {
+			color: white;
+			margin: 10px;
+			font-family: robotoregular;
+			font-size: 14px;
+			cursor: pointer;
+			&:hover {
+				font-family: robotobold;
+			}
+		}
+	}
+	.social {
+		font-size: 24px;
+		.fab, svg {
+			margin: 0 9px;
+			&.fa-linkedin-in {
+				margin-bottom: 2px;
+			}
+		}
+	}
+}

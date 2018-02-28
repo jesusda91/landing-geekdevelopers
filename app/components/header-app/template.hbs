@@ -1,8 +1,24 @@
 	<img src="assets/imgs/geekdev.svg" alt="">
 	<div class="items-navbar">
-		<a href="#about" {{action "scrollTo" "#about" bubbles=false}}><p>{{t "header.about"}}</p></a>
-		<a href="#projects" {{action "scrollTo" "#projects" bubbles=false}}><p>{{t "header.projects"}}</p></a>
-		<a href="#team" {{action "scrollTo" "#team" bubbles=false}}><p>{{t "header.team"}}</p></a>
-		<a href="#contact" {{action "scrollTo" "#contact" bubbles=false}}><p>{{t "header.contact"}}</p></a>
+		<a href="#about" {{action "scrollTo" "#about" bubbles=false}} class="main-link">
+			{{#link-to "index"}}
+				{{t "header.about"}}
+			{{/link-to}}
+		</a>
+		<a href="#team" {{action "scrollTo" "#team" bubbles=false}} class="main-link">
+			{{#link-to "index"}}
+				{{t "header.team"}}
+			{{/link-to}}
+		</a>
+		<a href="#projects" {{action "scrollTo" "#projects" bubbles=false}} class="main-link">
+			{{#link-to "index"}}
+				{{t "header.projects"}}
+			{{/link-to}}
+		</a>
+		<a href="#contact" {{action "scrollTo" "#contact" bubbles=false}} class="main-link">
+			{{#link-to "index"}}
+				{{t "header.contact"}}
+			{{/link-to}}
+		</a>
 	</div>
 {{yield}}

@@ -7,6 +7,7 @@ export default Component.extend({
 	fastboot: service(),
 	classNames: ["navbar", 'animated', 'headroom--top'],
 	classNameBindings: ['menuActive:active-menu'],
+	tagName: "header",
 	actions: {
 		scrollTo(target) {
 			$('html, body').animate({

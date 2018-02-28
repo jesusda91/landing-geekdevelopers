@@ -17,7 +17,7 @@
 
 .items-navbar {
 	@include align-vertical();
-	p{
+	.main-link {
 		padding: 1.5em;
 		font-size: 20px;
 		cursor: pointer;

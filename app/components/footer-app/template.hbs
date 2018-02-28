@@ -1,0 +1,30 @@
+<img src="assets/imgs/gd.svg" class="logo-footer">
+<div class="list-items flexbox align-vertical justify-center">
+	<a href="#about" {{action "scrollTo" "#about" bubbles=false}}>
+		{{#link-to "index"}}
+			{{t "header.about"}}
+		{{/link-to}}
+	</a>
+	<a href="#team" {{action "scrollTo" "#team" bubbles=false}}>
+		{{#link-to "index"}}
+			{{t "header.team"}}
+		{{/link-to}}
+	</a>
+	<a href="#projects" {{action "scrollTo" "#projects" bubbles=false}}>
+		{{#link-to "index"}}
+			{{t "header.projects"}}
+		{{/link-to}}
+	</a>
+	<a href="#contact" {{action "scrollTo" "#contact" bubbles=false}}>
+		{{#link-to "index"}}
+			{{t "header.contact"}}
+		{{/link-to}}
+	</a>
+	<p {{action "changeLocale" "es"}}>Español</p>
+	<p {{action "changeLocale" "en"}}>English</p>
+</div>
+<div class="social flexbox align-vertical justify-center">
+	<i class="fab fa-github-alt"></i>
+	<i class="fab fa-linkedin-in"></i>
+	<i class="fab fa-medium-m"></i>
+</div>
