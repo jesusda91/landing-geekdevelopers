@@ -1,21 +1,21 @@
-<div class="section1 flexbox flex-column align-vertical bg-img">
-	<p>Technology at your fingertips.</p>
-	<p>Products and services that change lives.</p>
-	<div class="flexbox">
-		<div class="point bg-yellow"></div>
-		<div class="point bg-green"></div>
-		<div class="point bg-red"></div>
-		<div class="point bg-blue"></div>
+<div class="section-intro flexbox flex-column align-vertical bg-img">
+	<h1>{{t "app.title"}}</h1>
+	<h2>{{t "app.subtitle"}}</h2>
+	<div class="flexbox" id="points">
+		<div class="point point-small bg-yellow"></div>
+		<div class="point point-small bg-green"></div>
+		<div class="point point-small bg-red"></div>
+		<div class="point point-small bg-blue"></div>
 	</div>
 </div>
-
-<div class="section2 flex-wrap flexbox align-vertical justify-center" name="about" id="about">
+<img src="/assets/imgs/combined-shape.svg" class="bottom-intro flexbox flex-end align-end">
+<div class="section-about flex-wrap flexbox align-vertical justify-center" name="about" id="about">
 	<div class="flexbox flex-wrap align-vertical justify-center">
 		<div class="square-frame">
 			<div class="square">
 				<img src="assets/imgs/team2.jpeg" alt="">
 			</div>
-			<div class="ctn-lines">
+			<div class="ctn-lines" id="ctn-lines">
 				<div class="line bg-yellow"></div>
 				<div class="line bg-green"></div>
 				<div class="line bg-red"></div>
@@ -24,13 +24,18 @@
 		</div>
 	</div>
 	<div class="about">
-		We are a multidisciplinary group of developers in charge of creating innovative products and services in diverse technological areas, from applied electronics to complex software products, always focused on offering striking, friendly and useful solutions that generate an added value of quality for the use of our users which are our reason for being.
+		{{t "app.about"}}
 		<div>
 			<img src="assets/imgs/gd.svg">
 		</div>
 	</div>
+	<img src="/assets/imgs/bottom-intro.svg" class="top-team flexbox flex-end align-end">
 </div>
-<div class="section2-5 flexbox justify-center align-vertical flex-wrap" id="team">
+<div class="section-team flexbox justify-center align-vertical flex-wrap" id="team">
+	<div class="flexbox flex-column align-vertical justify-center title-ctn">
+		<h2>{{t "header.team"}}</h2>
+		<div class="separator-line"></div>
+	</div>
 	{{#each model as |member|}}
 		<div class="circle-ctn flexbox flex-column justify-center align-vertical">
 			<div class="circle">
@@ -58,15 +63,16 @@
 		</div>
 	{{/each}}
 </div>
-<div class="section3 flex-wrap flexbox align-vertical justify-center" name="projects" id="projects">
-	<a href="http://medialop.com/" target="_blank"><img src="assets/imgs/medialop.svg"></a>
-	<img src="assets/imgs/hummi.svg" class="img-bigger">
-	<a href="https://sirjohnsandwich.com/" target="_blank"><img src="assets/imgs/sirjohn.svg" class="img-bigger"></a>
-	<img src="assets/imgs/accesio.svg">
+<div class="section-projects flex-wrap flexbox align-vertical justify-center" name="projects" id="projects">
+	<a href="http://medialop.com/" target="_blank" class="appear-logo"><img src="assets/imgs/medialop.svg"></a>
+	<img src="assets/imgs/hummi.svg" class="img-bigger appear-logo">
+	<a href="https://sirjohnsandwich.com/" target="_blank"><img src="assets/imgs/sirjohn.svg" class="img-bigger appear-logo"></a>
+	<img src="assets/imgs/accesio.svg" class="appear-logo">
 	{{!-- <a href="https://www.instagram.com/tenemoslaformula/" target="_blank"><img src="assets/imgs/nerd.svg"></a> --}}
-	<a href="https://cryptoblackmoon.github.io/" target="_blank"><img src="assets/imgs/blackgold.png" class="blackgold"></a>
+	<a href="https://cryptoblackmoon.github.io/" target="_blank"><img src="assets/imgs/blackgold.png" class="blackgold appear-logo"></a>
+	<img src="/assets/imgs/bottom-intro.svg" class="bottom-team flexbox flex-end align-end">
 </div>
-<div class="section4 flex-wrap flexbox align-vertical space-between" name="contact" id="contact">
+<div class="footer flex-wrap flexbox align-vertical space-between" name="contact" id="contact">
 	<div class="contact-txt flex-column">
 		<div class="flexbox">
 			<div class="point point-large bg-yellow"></div>

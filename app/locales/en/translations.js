@@ -1,11 +1,35 @@
 export default {
-  // "some.translation.key": "Text for some.translation.key",
-  //
-  // "a": {
-  //   "nested": {
-  //     "key": "Text for a.nested.key"
-  //   }
-  // },
-  //
-  // "key.with.interpolation": "Text with {{anInterpolation}}"
+	app: {
+		title: "Technology at your fingertips.",
+		subtitle: "Products and services that change lives.",
+		about: "We are a multidisciplinary group of developers in charge of creating innovative products and services in diverse technological areas, from applied electronics to complex software products, always focused on offering striking, friendly and useful solutions that generate an added value of quality for the use of our users which are our reason for being.",
+		titleApp: "GeekDevelopers | Technology at your fingertips.",
+		descriptionApp: "We are a multidisciplinary group of developers in charge of creating innovative products and services in diverse technological areas",
+	},
+	header: {
+		about: "About",
+		projects: "Projects",
+		team: "Team",
+		contact: "Contact",
+	},
+	charges: {
+		ceo: "CEO & COFUNDADOR",
+		manager: "ADMINISTRADOR",
+		androidLeader: "LIDER DE ANDROID",
+		designLeader: "LIDER DE DISEÑO",
+		frontLeader: "LIDER DE FRONTEND",
+		backLeader: "BACKEND LEADER",
+		frontDeveloper: "DESARROLLADOR FRONTEND",
+		backDeveloper: "DESARROLLADOR BACKEND",
+		uxPrototyper: "UX PROTOTYPER",
+		ilustrator: "ILUSTRADOR",
+		communityManager: "COMMUNITY MANAGER",
+		customerService: "SERVICIO AL CLIENTE",
+		iotDeveloper: "DESARROLLADOR IOT",
+		medialopCeo: "MEDIALOP CEO",
+		contentCurator: "CURADOR DE CONTENIDO",
+		digitalMarketing: "MERCADEO DIGITAL",
+		creative: "CREATIVO",
+		cryptoTrader: "CRYPTO TRADER",
+	}
 };
