@@ -1,16 +1,16 @@
-<div class="section-intro flexbox flex-column align-vertical bg-img">
+<div class="section-intro bg-img">
 	<h1>{{t "app.title"}}</h1>
 	<h2>{{t "app.subtitle"}}</h2>
-	<div class="flexbox" id="points">
+	<div id="points">
 		<div class="point point-small bg-yellow"></div>
 		<div class="point point-small bg-green"></div>
 		<div class="point point-small bg-red"></div>
 		<div class="point point-small bg-blue"></div>
 	</div>
 </div>
-<img src="/assets/imgs/combined-shape.svg" class="bottom-intro flexbox flex-end align-end">
-<div class="section-about flex-wrap flexbox align-vertical justify-center" name="about" id="about">
-	<div class="flexbox flex-wrap align-vertical justify-center">
+<img src="/assets/imgs/combined-shape.svg" class="bottom-intro">
+<div class="section-about" name="about" id="about">
+	<div class="ctn-square">
 		<div class="square-frame">
 			<div class="square">
 				<img src="assets/imgs/team2.jpeg" alt="">
@@ -29,21 +29,21 @@
 			<img src="assets/imgs/gd.svg">
 		</div>
 	</div>
-	<img src="/assets/imgs/bottom-intro.svg" class="top-team flexbox flex-end align-end">
+	<img src="/assets/imgs/bottom-intro.svg" class="top-team">
 </div>
-<div class="section-team flexbox justify-center align-vertical flex-wrap" id="team">
-	<div class="flexbox flex-column align-vertical justify-center title-ctn">
+<div class="section-team" id="team">
+	<div class="title-ctn">
 		<h2>{{t "header.team"}}</h2>
 		<div class="separator-line"></div>
 	</div>
 	{{#each model as |member|}}
-		<div class="circle-ctn flexbox flex-column justify-center align-vertical">
+		<div class="circle-ctn">
 			<div class="circle">
 				<img src={{member.image}} alt="">
 			</div>
 			<p class="name">{{member.name}}</p>
 			<p class="charge">{{member.charge}}</p>
-			<div class="social flexbox justify-center align-vertical">
+			<div class="social">
 				{{#if member.linkedin}}
 					<a href={{member.linkedin}} target="_blank">
 						<i class="ic_linkedin"></i>
@@ -63,35 +63,33 @@
 		</div>
 	{{/each}}
 </div>
-<div class="section-projects flex-wrap flexbox align-vertical justify-center" name="projects" id="projects">
+<div class="section-projects" name="projects" id="projects">
+	<div class="title-ctn">
+		<h2>{{t "header.projects"}}</h2>
+		<div class="separator-line"></div>
+	</div>
 	<a href="http://medialop.com/" target="_blank" class="appear-logo"><img src="assets/imgs/medialop.svg"></a>
 	<img src="assets/imgs/hummi.svg" class="img-bigger appear-logo">
 	<a href="https://sirjohnsandwich.com/" target="_blank"><img src="assets/imgs/sirjohn.svg" class="img-bigger appear-logo"></a>
 	<img src="assets/imgs/accesio.svg" class="appear-logo">
 	{{!-- <a href="https://www.instagram.com/tenemoslaformula/" target="_blank"><img src="assets/imgs/nerd.svg"></a> --}}
 	<a href="https://cryptoblackmoon.github.io/" target="_blank"><img src="assets/imgs/blackgold.png" class="blackgold appear-logo"></a>
-	<img src="/assets/imgs/bottom-intro.svg" class="bottom-team flexbox flex-end align-end">
+	<img src="/assets/imgs/bottom-intro.svg" class="bottom-team">
 </div>
-<div class="footer flex-wrap flexbox align-vertical space-between" name="contact" id="contact">
-	<div class="contact-txt flex-column">
-		<div class="flexbox">
-			<div class="point point-large bg-yellow"></div>
-			<span class="contact-text text1">admin@geekdevelopers.co</span>
-		</div>
-		<div class="flexbox">
-			<div class="point point-large bg-green"></div>
-			<span class="contact-text text2">Calle 5a #39 - 93 Torre 2</span>
-		</div>
-		<div class="flexbox">
-			<div class="point point-large bg-red"></div>
-			<span class="contact-text text3">Medellin, Colombia</span>
-		</div>
-		<div class="flexbox">
-			<div class="point point-large bg-blue"></div>
-			<span class="contact-text text4">+57 3006735230</span>
-		</div>
+
+<div class="footer">
+	<img src="assets/imgs/gd.svg" class="logo-footer">
+	<div class="list-items flexbox align-vertical justify-center">
+		<p>{{t "header.about"}}</p>
+		<p>{{t "header.projects"}}</p>
+		<p>{{t "header.team"}}</p>
+		<p>{{t "header.contact"}}</p>
+		<p>Español</p>
+		<p>English</p>
 	</div>
-	<div>
-		<img src="assets/imgs/geekdevelopers.svg" alt="">
+	<div class="social flexbox align-vertical justify-center">
+		<i class="fab fa-github-alt"></i>
+		<i class="fab fa-linkedin-in"></i>
+		<i class="fab fa-medium-m"></i>
 	</div>
 </div>

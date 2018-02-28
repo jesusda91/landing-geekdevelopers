@@ -5,7 +5,7 @@ import $ from 'jquery';
 
 export default Component.extend({
 	fastboot: service(),
-	classNames: ["navbar", "flexbox", "align-vertical", "space-between", 'animated', 'headroom--top'],
+	classNames: ["navbar", 'animated', 'headroom--top'],
 	classNameBindings: ['menuActive:active-menu'],
 	actions: {
 		scrollTo(target) {
