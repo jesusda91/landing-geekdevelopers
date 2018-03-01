@@ -15,11 +15,11 @@
 			{{t "header.projects"}}
 		{{/link-to}}
 	</a>
-	<a href="#contact" {{action "scrollTo" "#contact" bubbles=false}}>
-		{{#link-to "index"}}
+	{{#link-to "contact"}}
+		<a>
 			{{t "header.contact"}}
-		{{/link-to}}
-	</a>
+		</a>
+	{{/link-to}}
 	<p {{action "changeLocale" "es"}}>Español</p>
 	<p {{action "changeLocale" "en"}}>English</p>
 </div>

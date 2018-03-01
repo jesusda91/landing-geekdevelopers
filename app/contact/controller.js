@@ -18,6 +18,7 @@ export default Controller.extend({
 			let message = this.get("message");
 			this.set("invalidEmail",false);
 			this.set("invalidMsg",false);
+			this.set("successContact",false);
 			let errors = false;
 			if (!this.get("isEmailValid")) {
 				this.set("invalidEmail",true);
@@ -38,7 +39,9 @@ export default Controller.extend({
 				createdAt: new Date()
 			});
 
-			contact.save();
+			contact.save().then(()=>{
+				this.set("successContact",true);
+			});
 		}
 	}
 });

@@ -46,6 +46,7 @@ export default {
 		connectUs: "Conéctese con nosotros",
 		forSupport: "Para soporte o cualquier pregunta",
 		emailUs: "Envíanos un email a",
-		callAt: "Llamar o mandar un mensaje de texto a"
+		callAt: "Llamar o mandar un mensaje de texto a",
+		success: "Thanks for contacting us. We will get back to you shortly."
 	}
 };

@@ -46,6 +46,7 @@ export default {
 		connectUs: "Connect with us",
 		forSupport: "For support or any questions",
 		emailUs: "Email us at",
-		callAt: "Call or text us at"
+		callAt: "Call or text us at",
+		success: "Thanks for contacting us. We will get back to you shortly."
 	}
 };

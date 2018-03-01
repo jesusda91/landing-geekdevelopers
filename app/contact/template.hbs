@@ -17,6 +17,9 @@
 			{{#if invalidMsg}}
 				<p class="text-error">{{t "app.invalidMsg"}}</p>
 			{{/if}}
+			{{#if successContact}}
+			<p class="success-text">{{t "contact.success"}}</p>
+			{{/if}}
 			<button type="submit" {{action "sendForm"}}>
 				{{t "app.submit"}}
 			</button>
