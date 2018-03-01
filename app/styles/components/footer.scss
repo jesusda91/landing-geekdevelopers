@@ -2,12 +2,12 @@
 	@include align-vertical();
 	@include justify-content(space-around);
 	@include flex-wrap(wrap);
-	padding: 24px;
+	padding: 14px;
 	.logo-footer {
 
 	}
 	.list-items {
-		@include align-vertical();
+		@include flex-center();
 		@include flex-wrap(wrap);
 		margin: 14px;
 		a {

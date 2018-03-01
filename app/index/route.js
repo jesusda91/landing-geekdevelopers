@@ -1,5 +1,6 @@
+/*global ScrollReveal*/
 import Route from '@ember/routing/route';
-import { scheduleOnce, later } from '@ember/runloop';
+import { scheduleOnce } from '@ember/runloop';
 import { inject as service } from '@ember/service';
 
 export default Route.extend({
@@ -18,7 +19,7 @@ export default Route.extend({
 				name: "CRISTIAN MARIN",
 				charge: this.get("i18n").t("charges.ceo"),
 				image: "assets/imgs/team/cristian_xs.jpg",
-				// linkedin: "https://www.linkedin.com/in/"
+				linkedin: "https://www.linkedin.com/in/cristian-mar%C3%ADn-g%C3%B3mez-48953739/"
 			}, {
 				name: "JAMES CARDONA",
 				charge: this.get("i18n").t("charges.manager"),
@@ -82,13 +83,13 @@ export default Route.extend({
 				name: "SERGIO CRUZ",
 				charge: this.get("i18n").t("charges.backDeveloper"),
 				image: "assets/imgs/team/sergio_xs.jpg",
-				// linkedin: "https://www.linkedin.com/in/",
+				linkedin: "https://www.linkedin.com/in/sergioandrescruz",
 				// github: "https://github.com/"
 			}, {
 				name: "MATEO CALLEJAS",
 				charge: this.get("i18n").t("charges.uxPrototyper"),
 				image: "assets/imgs/team/mateo_xs.jpg",
-				// linkedin: "https://www.linkedin.com/in/",
+				linkedin: "https://www.linkedin.com/in/mateocallejas",
 			}, {
 				name: "SEBASTIAN MARIN",
 				charge: this.get("i18n").t("charges.ilustrator"),

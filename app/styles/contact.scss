@@ -1,0 +1,107 @@
+.contact {
+	@include justify-center();
+	@include flex-wrap(wrap);
+	min-height: calc(100vh - 83px - 92px);
+	margin-top: 83px;
+	background-color: white;
+	padding: 40px;
+	color: #4a4a4a;
+	font-size: 14px;
+	.ctn-contact-form {
+		width: 550px;
+		min-width: 400px;
+		margin: 18px 42px;
+		h2 {
+			font-family: robotobold;
+			font-size: 36px;
+		}
+		h3 {
+			font-weight: normal;
+			font-size: 16px;
+		}
+		form {
+			@include flexbox();
+			@include flex-direction(column);
+			input, textarea {
+				padding: 12px;
+				border-radius: 4px;
+				border: 1px solid #ccc;
+				margin: 8px 0;
+				width: 100%;
+			}
+			button {
+				@include align-self(flex-start);
+				border: 1px solid #3897f0;
+				background-color: #3897f0;
+				color: white;
+				border-radius: 2em;
+				padding: 9px 26px;
+				font-family: robotobold;
+				margin-top: 8px;
+				cursor: pointer;
+			}
+			.text-error {
+				color: #ff006b;
+				margin: 4px 0;
+			}
+		}
+	}
+	.connect-text {
+		min-width: 245px;
+		padding: 12px;
+		margin: 18px 42px;
+		.p1 {
+			font-size: 20px;
+		}
+		.p2, .p3, .p4 {
+			margin: 5px 0;
+			font-size: 15px;
+		}
+		a {
+			color: #3897f0;
+		}
+		a, span {
+			font-family: robotoregular;
+		}
+	}
+}
+
+textarea {
+	resize: none;
+}
+
+@media screen and (max-width: 1215px) {
+	.contact {
+		.ctn-contact-form {
+			h2, h3 {
+				text-align: center;
+			}
+		}
+		.connect-text {
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.contact {
+		.ctn-contact-form {
+			form {
+				button {
+					@include align-self(center);
+				}
+			}
+		}
+		.connect-text {
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.contact {
+		.ctn-contact-form {
+			min-width: 300px;
+		}
+	}
+}

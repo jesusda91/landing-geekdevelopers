@@ -25,6 +25,14 @@ module.exports = function(environment) {
         defaultLocale: 'es',
         availableLocales: ['en', 'es'],
     },
+    firebase: {
+		apiKey: "AIzaSyDOUSLEBR3lZ6eTN98kddJMD8XI4YvgmAQ",
+		authDomain: "geekdevelopers-8c235.firebaseapp.com",
+		databaseURL: "https://geekdevelopers-8c235.firebaseio.com",
+		projectId: "geekdevelopers-8c235",
+		storageBucket: "geekdevelopers-8c235.appspot.com",
+		messagingSenderId: "147301006663"
+    }
   };
 
   if (environment === 'development') {

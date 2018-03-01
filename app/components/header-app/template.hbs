@@ -1,4 +1,6 @@
-	<img src="assets/imgs/geekdev.svg" alt="">
+	{{#link-to "index"}}
+		<img src="assets/imgs/geekdev.svg" alt="">
+	{{/link-to}}
 	<div class="items-navbar">
 		<a href="#about" {{action "scrollTo" "#about" bubbles=false}} class="main-link">
 			{{#link-to "index"}}
@@ -15,10 +17,10 @@
 				{{t "header.projects"}}
 			{{/link-to}}
 		</a>
-		<a href="#contact" {{action "scrollTo" "#contact" bubbles=false}} class="main-link">
-			{{#link-to "index"}}
+		{{#link-to "contact" class="main-link"}}
+			<a>
 				{{t "header.contact"}}
-			{{/link-to}}
-		</a>
+			</a>
+		{{/link-to}}
 	</div>
 {{yield}}

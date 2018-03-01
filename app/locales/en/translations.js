@@ -5,6 +5,14 @@ export default {
 		about: "We are a multidisciplinary group of developers in charge of creating innovative products and services in diverse technological areas, from applied electronics to complex software products, always focused on offering striking, friendly and useful solutions that generate an added value of quality for the use of our users which are our reason for being.",
 		titleApp: "GeekDevelopers | Technology at your fingertips.",
 		descriptionApp: "We are a multidisciplinary group of developers in charge of creating innovative products and services in diverse technological areas",
+		name: "Name",
+		subject: "Subject",
+		email: "Email",
+		message: "Message",
+		invalidEmail: "Enter a valid email",
+		invalidMsg: "Message is required",
+		contact: "Contact us | GeekDevelopers",
+		submit: "Submit"
 	},
 	header: {
 		about: "About",
@@ -31,5 +39,13 @@ export default {
 		digitalMarketing: "MERCADEO DIGITAL",
 		creative: "CREATIVO",
 		cryptoTrader: "CRYPTO TRADER",
+	},
+	contact: {
+		title: "Get in Touch",
+		description: "Fill out the form below and we will contact you as soon as possible. For immediate assistance, please call or text our customer support number.",
+		connectUs: "Connect with us",
+		forSupport: "For support or any questions",
+		emailUs: "Email us at",
+		callAt: "Call or text us at"
 	}
 };

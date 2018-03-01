@@ -1,0 +1,32 @@
+<div class="contact">
+	<div class="ctn-contact-form">
+		<h2>
+			{{t "contact.title"}}
+		</h2>
+		<h3>
+			{{t "contact.description"}}
+		</h3>
+		<form>
+			{{input type="text" value=name placeholder=(t "app.name")}}
+			{{input type="text" value=email placeholder=(t "app.email")}}
+			{{#if invalidEmail}}
+				<p class="text-error">{{t "app.invalidEmail"}}</p>
+			{{/if}}
+			{{input type="text" value=subject placeholder=(t "app.subject")}}
+			{{textarea value=message placeholder=(t "app.message") rows=5}}
+			{{#if invalidMsg}}
+				<p class="text-error">{{t "app.invalidMsg"}}</p>
+			{{/if}}
+			<button type="submit" {{action "sendForm"}}>
+				{{t "app.submit"}}
+			</button>
+		</form>
+	</div>
+	<div class="connect-text">
+		<p class="p1">{{t "contact.connectUs"}}:</p>
+		<p class="p2">{{t "contact.forSupport"}}:</p>
+		<p class="p3">{{t "contact.emailUs"}} <a href="mailto:admin@geekdevelopers.co">admin@geekdevelopers.co</a></p>
+		<p class="p4">{{t "contact.callAt"}} <span>+57 3006735230</span></p>
+	</div>
+</div>
+{{outlet}}
