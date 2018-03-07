@@ -2,21 +2,21 @@
 		<img src="assets/imgs/geekdev.svg" alt="">
 	{{/link-to}}
 	<div class="items-navbar">
-		<a href="#about" {{action "scrollTo" "#about" bubbles=false}} class="main-link">
+		<div {{action "scrollTo" "#about" bubbles=false}} class="main-link">
 			{{#link-to "index"}}
 				{{t "header.about"}}
 			{{/link-to}}
-		</a>
-		<a href="#team" {{action "scrollTo" "#team" bubbles=false}} class="main-link">
+		</div>
+		<div {{action "scrollTo" "#team" bubbles=false}} class="main-link">
 			{{#link-to "index"}}
 				{{t "header.team"}}
 			{{/link-to}}
-		</a>
-		<a href="#projects" {{action "scrollTo" "#projects" bubbles=false}} class="main-link">
+		</div>
+		<div {{action "scrollTo" "#projects" bubbles=false}} class="main-link">
 			{{#link-to "index"}}
 				{{t "header.projects"}}
 			{{/link-to}}
-		</a>
+		</div>
 		{{#link-to "contact" class="main-link"}}
 			<a>
 				{{t "header.contact"}}

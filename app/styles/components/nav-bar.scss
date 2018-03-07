@@ -18,11 +18,14 @@
 .items-navbar {
 	@include align-vertical();
 	.main-link {
-		padding: 1.5em;
-		font-size: 20px;
 		cursor: pointer;
 		margin: 0;
 		margin-left: 12px;
+		a {
+			padding: 1.5em;
+			font-size: 20px;
+			display: block;
+		}
 		&:hover{
 			background-color: rgba(255,255,255,0.1);
 		}
