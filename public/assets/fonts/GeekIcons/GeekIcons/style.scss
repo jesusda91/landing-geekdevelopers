@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'GeekIcons';
-  src:  url('#{$icomoon-font-path}/GeekIcons.eot?66bggu');
-  src:  url('#{$icomoon-font-path}/GeekIcons.eot?66bggu#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/GeekIcons.ttf?66bggu') format('truetype'),
-    url('#{$icomoon-font-path}/GeekIcons.woff?66bggu') format('woff'),
-    url('#{$icomoon-font-path}/GeekIcons.svg?66bggu#GeekIcons') format('svg');
+  src:  url('#{$icomoon-font-path}/GeekIcons.eot?taku2p');
+  src:  url('#{$icomoon-font-path}/GeekIcons.eot?taku2p#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/GeekIcons.ttf?taku2p') format('truetype'),
+    url('#{$icomoon-font-path}/GeekIcons.woff?taku2p') format('woff'),
+    url('#{$icomoon-font-path}/GeekIcons.svg?taku2p#GeekIcons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -32,27 +32,27 @@
 
 .ic_email {
   &:before {
-    content: unicode($ic_email);
-    color: #4e4e4e;
+    content: unicode($ic_email); 
   }
 }
 .ic_phone {
   &:before {
-    content: unicode($ic_phone);
+    content: unicode($ic_phone); 
   }
 }
 .ic_artstation {
   &:before {
-    content: unicode($ic_artstation);
+    content: unicode($ic_artstation); 
   }
 }
 .ic_github {
   &:before {
-    content: unicode($ic_github);
+    content: unicode($ic_github); 
   }
 }
 .ic_linkedin {
   &:before {
-    content: unicode($ic_linkedin);
+    content: unicode($ic_linkedin); 
   }
 }
+

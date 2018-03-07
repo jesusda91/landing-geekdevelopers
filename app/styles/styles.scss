@@ -29,14 +29,19 @@ a {
 	h1, h2, p {
 		color: white;
 		text-align: center;
-		font-size: 32px;
-		font-family: robotolight_italic;
+		font-size: 42px;
+		font-family: robotobold;
 		font-weight: normal;
 		width: 60%;
 		max-width: 800px;
 		min-width: 300px;
 		line-height: 1.25;
 		margin: 0;
+	}
+	h2 {
+		font-size: 30px;
+		font-family: robotolight;
+		margin-top: 12px;
 	}
 	#points {
 		@include flexbox();
@@ -55,8 +60,24 @@ a {
 }
 
 .bg-img {
-	background-image: url('/assets/imgs/rectangle.png');
+	background-image: url('/assets/imgs/geek_header.jpg');
 	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 0;
+	h1, h2, .points {
+		z-index: 1;
+	}
+	&::before {
+		content: " ";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background-color: rgba(#111,0.65);
+		z-index: 0;
+	}
 }
 
 .section-about {
