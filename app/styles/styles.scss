@@ -12,6 +12,10 @@ body {
  	overflow-x: hidden;
 }
 
+a {
+	text-decoration: none;
+}
+
 .hide {
 	display: none !important;
 }
@@ -133,6 +137,10 @@ body {
 		top: 0;
 		left: 0;
 		width: 100%;
+	}
+	img.do-nations {
+		opacity: .85;
+		height: 35px;
 	}
 	img.img-bigger {
 		height: 92px;
