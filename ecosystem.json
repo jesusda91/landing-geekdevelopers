@@ -33,7 +33,7 @@
       "post-deploy": [
         "npm install",
         "npm update",
-        "npm build-prod",
+        "npm run build-prod",
         "pm2 startOrRestart ecosystem.json --env production",
         "pm2 update"
       ].join(" && "),
