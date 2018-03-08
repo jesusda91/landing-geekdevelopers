@@ -24,7 +24,7 @@
       "key": "'$HOME'/.ssh/geek-developers-servers.pem",
       "user": "ec2-user",
       "host": {
-        "host": "ec2-52-38-156-245.us-west-2.compute.amazonaws.com",
+        "host": "ec2-34-213-184-158.us-west-2.compute.amazonaws.com",
         "port": "22"
       },
       "ref": "origin/master",
