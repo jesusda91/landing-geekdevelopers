@@ -1,0 +1,45 @@
+{
+  "apps": {
+    "name": "geekdevelopers-landing",
+    "script": "index.js",
+    "error_file": "/src/geekdevelopers-landing/logs/errors/prerender-err.log",
+    "out_file": "/src/geekdevelopers-landing/logs/out/prerender-out.log",
+    "pid_file": "/src/geekdevelopers-landing/pid/prerender.pid",
+    "min_uptime": "200s",
+    "max_restarts": 3,
+    "max_memory_restart": "2G",
+    "merge_logs": true,
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "watch": false,
+    "ignore_watch": [
+      "[\\/\\\\]\\./",
+      "node_modules"
+    ],
+    "exec_mode": "cluster",
+    "instances": 4,
+    "autorestart": true
+  },
+  "deploy": {
+    "production": {
+      "key": "'$HOME'/.ssh/geek-developers-servers.pem",
+      "user": "ec2-user",
+      "host": {
+        "host": "ec2-52-38-156-245.us-west-2.compute.amazonaws.com",
+        "port": "22"
+      },
+      "ref": "origin/master",
+      "repo": "git@github.com:jesusda91/landing-geekdevelopers.git",
+      "path": "/src/geekdevelopers-landing/production",
+      "post-deploy": [
+        "npm install",
+        "npm update",
+        "ember build -prod",
+        "pm2 startOrRestart ecosystem.json --env production",
+        "pm2 update"
+      ].join(" && "),
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+  }
+}
