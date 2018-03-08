@@ -2,9 +2,9 @@
   "apps": {
     "name": "geekdevelopers-landing",
     "script": "index.js",
-    "error_file": "/src/geekdevelopers-landing/production/logs/errors/landing-err.log",
-    "out_file": "/src/geekdevelopers-landing/production/logs/out/landing-out.log",
-    "pid_file": "/src/geekdevelopers-landing/production/pid/landing.pid",
+    "error_file": "/src/geekdevelopers-landing/logs/errors/landing-err.log",
+    "out_file": "/src/geekdevelopers-landing/logs/out/landing-out.log",
+    "pid_file": "/src/geekdevelopers-landing/pid/landing.pid",
     "min_uptime": "200s",
     "max_restarts": 3,
     "max_memory_restart": "2G",
@@ -21,7 +21,7 @@
   },
   "deploy": {
     "production": {
-      "key": "'$HOME'/.ssh/geek-developers-servers.pem",
+      "key": "${HOME}/.ssh/geek-developers-servers.pem",
       "user": "ec2-user",
       "host": {
         "host": "ec2-34-213-184-158.us-west-2.compute.amazonaws.com",
