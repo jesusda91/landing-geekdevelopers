@@ -21,7 +21,7 @@
   },
   "deploy": {
     "production": {
-      "key": "${HOME}/.ssh/geek-developers-servers.pem",
+      "key": "'$HOME'/.ssh/geek-developers-servers.pem",
       "user": "ec2-user",
       "host": {
         "host": "ec2-34-213-184-158.us-west-2.compute.amazonaws.com",
