@@ -16,7 +16,9 @@
     "start-serve": "ember serve",
     "start": "node index.js",
     "test": "ember test",
-    "heroku-postbuild": "ember build -prod"
+    "heroku-postbuild": "ember build -prod",
+    "deploy-setup": "pm2 deploy ecosystem.json production setup",
+    "deploy": "pm2 deploy ecosystem.json production"
   },
   "dependencies": {
     "broccoli-asset-rev": "^2.4.5",
