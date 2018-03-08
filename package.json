@@ -12,6 +12,7 @@
   "repository": "",
   "scripts": {
     "build": "ember build",
+    "build-prod": "ember build -prod",
     "lint:js": "eslint ./*.js app config lib server tests",
     "start-serve": "ember serve",
     "start": "node index.js",
