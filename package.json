@@ -12,15 +12,17 @@
   "repository": "",
   "scripts": {
     "build": "ember build",
+    "build-prod": "ember build -prod",
     "lint:js": "eslint ./*.js app config lib server tests",
     "start-serve": "ember serve",
     "start": "node index.js",
     "test": "ember test",
-    "heroku-postbuild": "ember build -prod"
+    "heroku-postbuild": "ember build -prod",
+    "deploy-setup": "pm2 deploy ecosystem.json production setup",
+    "deploy": "pm2 deploy ecosystem.json production"
   },
   "dependencies": {
     "broccoli-asset-rev": "^2.4.5",
-    "ember-ajax": "^3.0.0",
     "ember-cli": "~3.0.0",
     "ember-cli-app-version": "^3.0.0",
     "ember-cli-babel": "^6.6.0",

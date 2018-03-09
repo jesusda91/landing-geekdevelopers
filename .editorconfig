@@ -19,6 +19,6 @@ insert_final_newline = false
 [*.{diff,md}]
 trim_trailing_whitespace = false
 
-[{router.js,package.json}]
+[{router.js,package.json,ecosystem.json,.eslintrc.js}]
 indent_style = space
 indent_size = 2
