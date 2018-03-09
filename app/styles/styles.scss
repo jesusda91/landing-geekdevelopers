@@ -45,7 +45,10 @@ a {
 	}
 	#points {
 		@include flexbox();
-		margin-top: 24px;
+		margin-top: 36px;
+		.point {
+			border-radius: 100%;
+		}
 	}
 }
 
@@ -147,6 +150,9 @@ a {
 			opacity: 1;
 			filter: grayscale(0);
 			-webkit-filter: grayscale(0);
+		}
+		&.medialop {
+			height: 40px;
 		}
 	}
 	.bottom-team {
@@ -270,7 +276,15 @@ a {
 .point {
 	width: 18px;
 	height: 18px;
-	margin: 0 10px;
+	&.point.point-small.bg-green {
+		margin-left: -18px;
+	}
+	&.point.point-small.bg-red {
+		margin-left: -18px;
+	}
+	&.point.point-small.bg-blue {
+		margin-left: -18px;
+	}
 }
 
 .point-large {

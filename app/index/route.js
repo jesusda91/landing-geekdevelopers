@@ -164,29 +164,51 @@ export default Route.extend({
 				scrollReveal.reveal('.point.bg-yellow',{
 					origin:'right',
 					distance: '70px',
-					duration: 800,
-					delay: 70,
+					duration: 600,
+					delay: 50,
+					afterReveal: function (domEl) {
+						setTimeout(function() {
+							domEl.style.transform = "translateY(0) translateX(-20px) scale(1)"
+							domEl.style.borderRadius = "100%"
+						}, 410);
+					},
 
 				});
 				scrollReveal.reveal('.point.bg-green',{
 					origin:'right',
-					distance: '80px',
-					duration: 800,
-					delay: 150,
+					distance: '70px',
+					duration: 600,
+					delay: 170,
+					afterReveal: function (domEl) {
+						setTimeout(function() {
+							domEl.style.transform = "translateY(-20px) translateX(0) scale(1)"
+							domEl.style.borderRadius = "100%"
+						}, 270);
+					},
 
 				});
 				scrollReveal.reveal('.point.bg-red',{
 					origin:'right',
-					distance: '90px',
-					duration: 800,
-					delay: 250,
+					distance: '70px',
+					duration: 600,
+					delay: 290,
+					afterReveal: function (domEl) {
+						setTimeout(function() {
+							domEl.style.transform = "translateY(0) translateX(20px) scale(1)"
+							domEl.style.borderRadius = "100%"
+						}, 150);
+					},
 
 				});
 				scrollReveal.reveal('.point.bg-blue',{
 					origin:'right',
-					distance: '100px',
-					duration: 800,
-					delay: 350,
+					distance: '70px',
+					duration: 600,
+					delay: 400,
+					afterReveal: function (domEl) {
+						domEl.style.transform = "translateY(20px) translateX(0) scale(1)"
+						domEl.style.borderRadius = "100%"
+					},
 
 				});
 
@@ -240,7 +262,7 @@ export default Route.extend({
 					delay: 70
 				});
 
-				scrollReveal.reveal('.circle-ctn', { duration: 2000 }, 50);
+				scrollReveal.reveal('.circle-ctn', { duration: 1400 }, 50);
 				scrollReveal.reveal('.appear-logo', { duration: 2000 }, 50);
 
 			}
