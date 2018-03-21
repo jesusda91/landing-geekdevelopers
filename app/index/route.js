@@ -21,6 +21,16 @@ export default Route.extend({
 				image: "assets/imgs/team/cristian_xs.jpg",
 				linkedin: "https://www.linkedin.com/in/cristian-mar%C3%ADn-g%C3%B3mez-48953739/"
 			}, {
+				name: "MILE RUBIO",
+				charge: this.get("i18n").t("charges.salesDirector"),
+				image: "assets/imgs/team/milerubio_xs.jpg",
+				linkedin: "https://www.linkedin.com/in/milerubio",
+			},{
+				name: "JUAN OSSA BUILES",
+				charge: this.get("i18n").t("charges.salesManager"),
+				image: "assets/imgs/team/juanossa_xs.jpg",
+				linkedin: "https://www.linkedin.com/in/juan-sebastian-ossa-builes-4b32b148",
+			},{
 				name: "JAMES CARDONA",
 				charge: this.get("i18n").t("charges.manager"),
 				image: "assets/imgs/team/james_xs.jpg",

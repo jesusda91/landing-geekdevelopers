@@ -39,6 +39,8 @@ export default {
 		digitalMarketing: "MERCADEO DIGITAL",
 		creative: "CREATIVO",
 		cryptoTrader: "CRYPTO TRADER",
+		salesDirector: "DIRECTOR DE VENTAS EUROPA",
+		salesManager: "GERENTE DE VENTAS EUROPA"
 	},
 	contact: {
 		title: "Get in Touch",

@@ -247,6 +247,7 @@ a {
 	}
 	.social {
 		@include flex-center();
+		min-height: 21px;
 		a {
 			text-decoration: none;
 			i {
