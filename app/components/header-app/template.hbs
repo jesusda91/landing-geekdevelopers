@@ -1,26 +1,29 @@
+<div class="ctn-imgs-menu {{if menuActive "active-menu"}}">
 	{{#link-to "index"}}
 		<img src="assets/imgs/geekdev.svg" alt="">
 	{{/link-to}}
-	<div class="items-navbar">
-		<div {{action "scrollTo" "#about" bubbles=false}} class="main-link">
-			{{#link-to "index"}}
-				{{t "header.about"}}
-			{{/link-to}}
-		</div>
-		<div {{action "scrollTo" "#team" bubbles=false}} class="main-link">
-			{{#link-to "index"}}
-				{{t "header.team"}}
-			{{/link-to}}
-		</div>
-		<div {{action "scrollTo" "#projects" bubbles=false}} class="main-link">
-			{{#link-to "index"}}
-				{{t "header.projects"}}
-			{{/link-to}}
-		</div>
-		{{#link-to "contact" class="main-link"}}
-			<a>
-				{{t "header.contact"}}
-			</a>
+	<i class="ic_menu menu-responsive" {{action "toggleMenu"}}></i>
+</div>
+<div class="items-navbar {{if menuActive "active-menu"}}">
+	<div {{action "scrollTo" "#about" bubbles=false}} class="main-link">
+		{{#link-to "index"}}
+			{{t "header.about"}}
 		{{/link-to}}
 	</div>
+	<div {{action "scrollTo" "#team" bubbles=false}} class="main-link">
+		{{#link-to "index"}}
+			{{t "header.team"}}
+		{{/link-to}}
+	</div>
+	<div {{action "scrollTo" "#projects" bubbles=false}} class="main-link">
+		{{#link-to "index"}}
+			{{t "header.projects"}}
+		{{/link-to}}
+	</div>
+	{{#link-to "contact" class="main-link"}}
+		<a>
+			{{t "header.contact"}}
+		</a>
+	{{/link-to}}
+</div>
 {{yield}}

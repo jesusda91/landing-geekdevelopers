@@ -30,15 +30,21 @@
   @return unquote("\"") + $str + unquote("\"");
 }
 
-.ic_email {
+.ic_menu {
   &:before {
-    content: unicode($ic_email);
+    content: unicode($ic_menu);
     color: #4e4e4e;
   }
 }
 .ic_phone {
   &:before {
     content: unicode($ic_phone);
+  }
+}
+.ic_email {
+  &:before {
+    content: unicode($ic_email);
+    color: #4e4e4e;
   }
 }
 .ic_artstation {

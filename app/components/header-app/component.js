@@ -5,9 +5,11 @@ import $ from 'jquery';
 
 export default Component.extend({
 	fastboot: service(),
-	classNames: ["navbar", 'animated', 'headroom--top'],
-	classNameBindings: ['menuActive:active-menu'],
+	classNames: ["navbar", 'animated', 'headroom--top', 'responsive-header'],
+	// classNameBindings: ['menuActive:active-menu'],
 	tagName: "header",
+	menuActive: false,
+
 	actions: {
 		scrollTo(target) {
 			$('html, body').animate({
@@ -17,6 +19,11 @@ export default Component.extend({
 
 		toggleMenu() {
 			this.toggleProperty('menuActive');
+			if (this.get("menuActive")) {
+				this.$().addClass("header-open");
+			} else {
+				this.$().removeClass("header-open");
+			}
 		}
 	},
 
